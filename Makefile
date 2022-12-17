@@ -7,6 +7,7 @@ impbpaste:
 	clang -Wall -g -O3 -ObjC -framework Foundation -framework AppKit -o impbpaste impbpaste.m
 
 install: default
+	mkdir -p ~/bin
 	mv impbcopy ~/bin/
 	mv impbpaste ~/bin/
 
